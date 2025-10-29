@@ -1,0 +1,130 @@
+/* 🌅 خلفية متحركة وناعمة */
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top left, #6675e7, #764ba2, #a24b67);
+    background-size: 200% 200%;
+    animation: bgMove 8s ease infinite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* 🎞️ حركة خفيفة للخلفية */
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🧊 البطاقة بتأثير الزجاج */
+.login-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 25px;
+    padding: 50px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+    transition: transform 0.4s;
+}
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 🎯 العناوين */
+.login-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.login-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 35px;
+}
+
+/* ✏️ الحقول */
+.login-input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 15px;
+    border: 2px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.3s;
+}
+.login-input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+.login-input:focus {
+    border-color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+/* 🔘 زر الدخول */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #6675e7, #764ba2);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.login-btn:hover {
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+    transform: scale(1.03);
+}
+
+/* ⚙️ خيارات إضافية */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.8);
+}
+.login-forgot {
+    color: #fff;
+    text-decoration: underline;
+}
+.login-forgot:hover {
+    color: #ffd8f0;
+}
+
+/* 🧾 إنشاء حساب */
+.login-signup {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+.login-signup a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.login-signup a:hover {
+    color: #ffdfef;
+}
+
+/* ⚠️ تنبيه الخطأ */
+.login-alert {
+    background: #fee;
+    color: #c33;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #fcc;
+    position: relative;
+    transition: opacity 0.5s ease;
+}
