@@ -37,4 +37,4 @@ Admins can manage products, track sales, and update the store’s content from a
 ## 💡 How to Run the Project
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   https://github.com/Abdurahman4/E-commerce.git
